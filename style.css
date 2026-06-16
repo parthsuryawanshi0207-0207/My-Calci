@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(15, 23, 42);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    color: #f8fafc;
+}
+
+.calculator-container {
+    display: flex;
+    flex-direction: column;
+    background: rgb(30, 41, 59);
+    border: 1px solid rgb(48, 59, 76);
+    padding: 30px;
+    border-radius: 24px;
+    text-align: center;
+    max-width: 360px;
+    width: 100%;
+}
+
+.theme-toggle {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
+
+#theme-btn {
+    background: rgb(41, 52, 69);
+    border: 1px solid rgb(52, 62, 79);
+    color: #e2e8f0;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-family: inherit;
+}
+
+#theme-btn:hover {
+    background: rgb(64, 73, 89);
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #94a3b8;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.calculator-display {
+    margin-bottom: 20px;
+}
+
+.display-screen {
+    width: 100%;
+    height: 75px;
+    background: rgb(21, 30, 49);
+    border: 1px solid rgb(41, 52, 69);
+    border-radius: 16px;
+    padding: 15px 20px;
+    font-size: 2.2rem;
+    color: #38bdf8;
+    text-align: right;
+    outline: none;
+    font-family: inherit;
+    letter-spacing: 1px;
+}
+
+.keypad-wrapper {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 12px;
+}
+
+.numbers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.operator-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.num-btn {
+    height: 60px;
+    border: none;
+    border-radius: 14px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: #e2e8f0;
+    background: rgb(39, 50, 68);
+}
+
+.num-btn:hover {
+    background: rgb(57, 67, 83);
+}
+
+#clear-btn {
+    background: rgb(93, 49, 62);
+    border: 1px solid rgb(82, 48, 61);
+    color: #fca5a5;
+}
+
+#clear-btn:hover {
+    background: rgb(124, 54, 63);
+}
+
+#equals-btn {
+    background: rgb(14, 165, 233);
+    color: #ffffff;
+    font-weight: 600;
+}
+
+#equals-btn:hover {
+    background: rgb(56, 189, 248);
+}
+
+.op-btn {
+    height: 60px;
+    border: none;
+    border-radius: 14px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: #38bdf8;
+    background: rgb(32, 53, 74);
+    border: 1px solid rgb(34, 63, 87);
+}
+
+.op-btn:hover {
+    background: rgb(35, 71, 97);
+    color: #ffffff;
+}
+
+body.light-theme {
+    background: rgb(226, 232, 240);
+    color: #0f172a;
+}
+
+body.light-theme .calculator-container {
+    background: rgb(248, 250, 252);
+    border: 1px solid rgb(229, 232, 235);
+}
+
+body.light-theme #theme-btn {
+    background: rgb(236, 239, 242);
+    border: 1px solid rgb(225, 227, 231);
+    color: #334155;
+}
+
+body.light-theme #theme-btn:hover {
+    background: rgb(225, 227, 231);
+}
+
+body.light-theme h2 {
+    color: #64748b;
+}
+
+body.light-theme .display-screen {
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(229, 232, 235);
+    color: #0284c7;
+}
+
+body.light-theme .num-btn {
+    color: #334155;
+    background: rgb(239, 241, 244);
+}
+
+body.light-theme .num-btn:hover {
+    background: rgb(229, 232, 235);
+}

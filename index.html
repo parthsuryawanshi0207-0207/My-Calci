@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY Calci</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="light-theme">
+    <div class="calculator-container">
+        <div class="theme-toggle">
+            <button id="theme-btn" aria-label="Toggle Theme">☀️ Light Mode</button>
+        </div>
+
+        <h2>Parth's Calculator</h2>
+
+        <div class="calculator-display">
+            <input type="text" id="display" class="display-screen" placeholder="0" readonly>
+        </div>
+
+        <div class="keypad-wrapper">
+            <div class="numbers-grid">
+                <button class="num-btn">1</button>
+                <button class="num-btn">2</button>
+                <button class="num-btn">3</button>
+                <button class="num-btn">4</button>
+                <button class="num-btn">5</button>
+                <button class="num-btn">6</button>
+                <button class="num-btn">7</button>
+                <button class="num-btn">8</button>
+                <button class="num-btn">9</button>
+                <button class="num-btn" id="clear-btn">C</button>
+                <button class="num-btn">0</button>
+                <button class="num-btn" id="equals-btn">=</button>
+            </div>
+
+            <div class="operator-column">
+                <button class="op-btn">+</button>
+                <button class="op-btn">-</button>
+                <button class="op-btn">×</button>
+                <button class="op-btn">÷</button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
