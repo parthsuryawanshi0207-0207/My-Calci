@@ -31,10 +31,18 @@ function calculate() {
         formula = formula.replace(/×/g, '*').replace(/÷/g, '/');
 
         display.value = eval(formula);
+        const result = eval(formula);
+        // for the division by zero edge casee
+        if (result === Infinity || result === -Infinity || isNaN(result)) {
+            display.value = 'Error';
+        } else {
+            display.value = result;
+        }
     } catch {
         display.value = 'Error';
     }
 }
+
 
 // light and dark switch
 themeBtn.addEventListener('click', () => {
