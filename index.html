@@ -20,6 +20,8 @@
             <input type="text" id="display" class="display-screen" placeholder="0" readonly>
         </div>
 
+        <button id="backspace-btn" class="num-btn backspace-btn">Backspace ⌫</button>
+
         <div class="keypad-wrapper">
             <div class="numbers-grid">
                 <button class="num-btn">1</button>
@@ -43,8 +45,15 @@
                 <button class="op-btn">÷</button>
             </div>
         </div>
-
-
+        <div class="history-container">
+            <div class="history-header">
+                <h3>History</h3>
+                <button id="clear-history-btn" class="clear-history-btn">Clear</button>
+            </div>
+            <ul id="history-list" class="history-list">
+                <li class="history-empty">No history yet</li>
+            </ul>
+        </div>
     </div>
 
     <script src="script.js"></script>

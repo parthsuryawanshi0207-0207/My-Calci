@@ -60,6 +60,106 @@ h2 {
     margin-bottom: 20px;
 }
 
+.backspace-btn {
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 1.1rem !important;
+}
+
+.history-container {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid rgb(48, 59, 76);
+}
+
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.history-header h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #94a3b8;
+}
+
+.clear-history-btn {
+    background: rgb(41, 52, 69);
+    border: 1px solid rgb(52, 62, 79);
+    color: #e2e8f0;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-family: inherit;
+    transition: background 0.2s;
+}
+
+.clear-history-btn:hover {
+    background: rgb(64, 73, 89);
+}
+
+.history-list {
+    list-style: none;
+    max-height: 150px;
+    overflow-y: auto;
+    padding-right: 5px;
+    text-align: left;
+}
+
+.history-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.history-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.history-list::-webkit-scrollbar-thumb {
+    background: rgb(48, 59, 76);
+    border-radius: 3px;
+}
+
+.history-item {
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    background: rgb(21, 30, 49);
+    border: 1px solid rgb(41, 52, 69);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2px;
+}
+
+.history-item:hover {
+    background: rgb(32, 43, 67);
+    border-color: rgb(56, 189, 248);
+}
+
+.history-formula {
+    font-size: 0.85rem;
+    color: #64748b;
+    word-break: break-all;
+}
+
+.history-result {
+    font-size: 1.1rem;
+    color: #38bdf8;
+    font-weight: 600;
+}
+
+.history-empty {
+    text-align: center;
+    color: #64748b;
+    font-size: 0.9rem;
+    padding: 15px 0;
+}
+
 .display-screen {
     width: 100%;
     height: 75px;
@@ -182,4 +282,48 @@ body.light-theme .num-btn {
 
 body.light-theme .num-btn:hover {
     background: rgb(229, 232, 234);
+}
+
+body.light-theme .history-container {
+    border-top: 1px solid rgb(229, 232, 235);
+}
+
+body.light-theme .history-header h3 {
+    color: #64748b;
+}
+
+body.light-theme .clear-history-btn {
+    background: rgb(236, 239, 242);
+    border: 1px solid rgb(225, 227, 231);
+    color: #334155;
+}
+
+body.light-theme .clear-history-btn:hover {
+    background: rgb(225, 227, 231);
+}
+
+body.light-theme .history-list::-webkit-scrollbar-thumb {
+    background: rgb(203, 213, 225);
+}
+
+body.light-theme .history-item {
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(229, 232, 235);
+}
+
+body.light-theme .history-item:hover {
+    background: rgb(241, 245, 249);
+    border-color: #0284c7;
+}
+
+body.light-theme .history-formula {
+    color: #94a3b8;
+}
+
+body.light-theme .history-result {
+    color: #0284c7;
+}
+
+body.light-theme .history-empty {
+    color: #94a3b8;
 }
